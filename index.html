@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test API</title>
+	<script type="text/javascript" src="./node_modules/jquery/dist/jquery.min.js"></script>
+</head>
+<body>
+<script>
+	var token = "secret";
+	//var url = "https://www.ncdc.noaa.gov/cdo-web/api/v2/datasets/GSOY"
+	var url = "https://www.ncdc.noaa.gov/cdo-web/api/v2/data?datasetid=PRECIP_15&stationid=COOP:010008&units=metric&startdate=2010-05-01&enddate=2010-05-31";
+	var data = {};
+
+	$.ajax({ 
+		url: url, 
+		data: data, 
+		headers: { token: token },
+		success: function(data, code, xhr) {
+			console.log(data);
+		},
+		failure: function(error, code, xhr) {
+			console.log(error, code, xhr);
+		}
+	});
+	
+	
+</script>
+	
+</body>
+</html>

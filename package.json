@@ -1,0 +1,17 @@
+{
+	"name": "weather_api",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"start": "node server.js"
+	},
+	"description": "API for weather data",
+	"main": "server.js",
+	"dependencies": {
+		"body-parser": "^1.18.3",
+		"express": "^4.16.0",
+		"jquery": "^3.3.1"
+	},
+	"author": "Chris Mackey",
+	"license": "ISC"
+}
